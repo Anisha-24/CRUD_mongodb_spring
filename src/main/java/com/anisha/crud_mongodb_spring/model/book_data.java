@@ -1,30 +1,29 @@
 package com.anisha.crud_mongodb_spring.model;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "data")  //@Document annotation helps us override the collection name by “data”.
-public class Model_data {
+@Document(collection = "book_data")  //@Document annotation helps us override the collection name by “data”.
+public class book_data {
 
     @org.springframework.data.annotation.Id
-    private String Id;
+    private String id;
 
     private String Title;
     private String Description;
     private boolean Published;
 
-    public Model_data(){
+    public book_data(){
 
     }
 
-    public Model_data(String title, String description, boolean published){
+    public book_data(String title, String description, boolean published){
         Title = title;
         Description = description;
         Published = published;
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public String getTitle() {
@@ -54,7 +53,7 @@ public class Model_data {
     @Override
     public String toString() {
         return "Model_data{" +
-                "Id='" + Id + '\'' +
+                "Id='" + id + '\'' +
                 ", Title='" + Title + '\'' +
                 ", Description='" + Description + '\'' +
                 ", Published=" + Published +

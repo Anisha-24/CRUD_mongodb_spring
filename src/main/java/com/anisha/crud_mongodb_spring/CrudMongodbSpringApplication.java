@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CrudMongodbSpringApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CrudMongodbSpringApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CrudMongodbSpringApplication.class, args);
+    }
 
 }
